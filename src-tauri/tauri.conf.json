@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "--project-name",
+  "productName": "EditorBiblia",
   "version": "0.1.0",
   "identifier": "com.editor.biblia",
   "build": {
@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "--project-name",
+        "title": "Editor de Bíblia",
         "width": 800,
         "height": 600
       }
