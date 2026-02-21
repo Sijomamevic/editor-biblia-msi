@@ -30,7 +30,8 @@
         "language": "pt-BR"
       },
       "webviewInstallMode": {
-        "type": "downloadBootstrapper"
+        "type": "fixedRuntime",
+        "version": "133.0.3065.69"
       }
     },
     "icon": [
