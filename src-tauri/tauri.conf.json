@@ -30,8 +30,7 @@
         "language": "pt-BR"
       },
       "webviewInstallMode": {
-        "type": "fixedRuntime",
-        "version": "133.0.3065.69"
+        "type": "offlineInstaller"
       }
     },
     "icon": [
