@@ -36,12 +36,6 @@ jobs:
           toolchain: stable
           target: x86_64-pc-windows-msvc
 
-      - name: Install WebView2
-        run: |
-          Invoke-WebRequest -Uri https://go.microsoft.com/fwlink/p/?LinkId=2124703 -OutFile WebView2Installer.exe
-          Start-Process -FilePath .\WebView2Installer.exe -ArgumentList '/install /silent /norestart' -Wait
-        shell: pwsh
-
       - name: Install frontend dependencies
         run: pnpm install
 
@@ -52,5 +46,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: editor-biblia-msi
-          path: src-tauri/target/x86_64-pc-windows-msvc/release/*.msi
+          path: src-tauri/target/x86_64-pc-windows-msvc/release/bundle/msi/*.msi
           retention-days: 7
